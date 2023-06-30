@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Car Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header" id="header">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul>
+                    <li><a href="#" id="modelq">Model Q</a></li>
+                    <li><a href="#" id="modelp">Model Pilot</a></li>
+                    <li><a href="#" id="models">Model Spaceship</a></li>
+                    <li><a href="#" id="modeld">Model Dragon</a></li>
+                </ul>
+                <a href="#" class="btn">Reserve Now</a>
+            </nav>
+
+            <div class="info">
+                <div>
+                    <h2>1.9 s</h2>
+                    <p>100 mph</p>
+                </div>
+                <div>
+                    <h2>300 mph</h2>
+                    <p>Top Speed</p>
+                </div>
+                <div>
+                    <h2>500 mil</h2>
+                    <p>Max Range</p>
+                </div>
+                <div class="line">
+                </div>
+                <div>
+                    <h2 id="model">Model Q</h2>
+                </div>  
+            </div>
+
+        </div>
+
+        <script>
+
+            var header = document.getElementById("header");
+            var mq = document.getElementById("modelq");
+            var mp = document.getElementById("modelp");
+            var ms = document.getElementById("models");
+            var md = document.getElementById("modeld");
+            var model = document.getElementById("model");
+
+
+            mq.onclick = function(){
+                header.style.backgroundImage = "url(images/image-2.png)";
+                model.innerHTML = "Model Q"
+            }
+            mp.onclick = function(){
+                header.style.backgroundImage = "url(images/image-3.png)";
+                model.innerHTML = "Model Pilot"
+            }
+            ms.onclick = function(){
+                header.style.backgroundImage = "url(images/image-1.png)";
+                model.innerHTML = "Model Spaceship"
+            }
+            md.onclick = function(){
+                header.style.backgroundImage = "url(images/image-4.png)";
+                model.innerHTML = "Model Dragon"
+            }
+
+        </script>
+
+    </body>
+</html>
